@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="wex.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<header>
+<font size="+3"/>Suis je compatible avex Wex ?</font>
+</header>
+
+
+<i> Ce formulaire est à remplir avec vérité, n'essayer pas de marquer des points pour etre compatible avec Wex, restez vous même.</i>  
+
+
+
+<form id="form1">
+
+1-Mon manga préféré
+       :<br />
+     <label for="dbz"><input type="radio" name="manga" value="10" id="dbz" />dbz.</label>
+       <input type="radio" name="manga" value="0" id="naruto" /> <label for="naruto">Naruto mon enfance</label><br />
+       <input type="radio" name="manga" value="0" id="one-piece" /> <label for="one-piece">One-Piece le meilleur manga du monde</label><br />
+
+  
+
+2-Quel nombre vous fait kiffer?
+       :<br />
+       <input type="radio" name="nombre" value="0" id="1" /> <label for="1" value="0">1</label><br />
+       <input type="radio" name="nombre" value="0" id="500" /> <label for="500" value="0">500</label><br />
+       <input type="radio" name="nombre" value=10 id="40000" /> <label for="40000" value="40000">40000</label><br />`
+       <label for="4"><input type="radio" name="nombre" value="2" id="4" />Identifies a portion of a string.</label>
+   </p>
+
+   </p>
+
+   <button type="submit" value="Submit">Submit</button>
+
+
+</form>
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+
+
+
+</div><!-- close main div -->
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       manga = parseInt(document.querySelector('input[name = "manga"]:checked').value);
+     nombre = parseInt(document.querySelector('input[name = "nombre"]:checked').value);
+   
+     
+     
+     result = manga + nombre;
+     
+  document.getElementById("grade").innerHTML = result;
+     
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+</body>
+</html>
+
+
